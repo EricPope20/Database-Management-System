@@ -1,0 +1,25 @@
+<!--This is the file that will contain the menu info-->
+<resources>
+    <string name="app_name">Eric Database Management System</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_search">Search</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+    <string name="nav_item_home">Chassis Detail Info</string>
+    <string name="nav_item_friends">Power Supply</string>
+    <string name="nav_item_notifications">PCSI/Cards Info</string>
+
+    <!-- navigation drawer item labels  -->
+    <string-array name="nav_drawer_labels">
+        <item>@string/nav_item_home</item>
+        <item>@string/nav_item_friends</item>
+        <item>@string/nav_item_notifications</item>
+    </string-array>
+
+    <!--This displays on the navigational bar-->
+    <string name="title_details_info">Details Info</string>
+    <string name="title_logist_info">Logist Info</string>
+    <string name="title_host_info">Host Info</string>
+    <string name="title_home">Eric Database</string>
+</resources>

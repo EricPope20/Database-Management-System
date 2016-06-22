@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/textColorPrimary">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/windowBackground">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorAccent"
+            android:layout_margin="10dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Details Information"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/textColorPrimary"
+                android:textSize="17sp"
+                android:textStyle="bold"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/displayName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Display Name:"
+            android:background="@color/colorAccent"
+            android:textColor="@color/textColorPrimary"/>
+
+        <TextView
+            android:id="@+id/itemName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/displayName"
+            android:padding="5dp"
+            android:text="Item Name:"
+            android:background="@color/textColorPrimary"
+            android:textColor="@color/colorAccent"/>
+        <TextView
+            android:id="@+id/refTemplate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/itemName"
+            android:padding="5dp"
+            android:text="Ref Template"
+            android:background="@color/colorAccent"
+            android:textColor="@color/textColorPrimary"/>
+        <TextView
+            android:id="@+id/txtType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/refTemplate"
+            android:padding="5dp"
+            android:text="Type"
+            android:background="@color/textColorPrimary"
+            android:textColor="@color/colorAccent"/>
+
+        <TextView
+            android:id="@+id/typeState"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtType"
+            android:padding="5dp"
+            android:text="Type State"
+            android:background="@color/colorAccent"
+            android:textColor="@color/textColorPrimary"/>
+        <TextView
+            android:id="@+id/serialNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/typeState"
+            android:padding="5dp"
+            android:text="Serial Number"
+            android:background="@color/textColorPrimary"
+            android:textColor="@color/colorAccent"/>
+        <TextView
+            android:id="@+id/manufacturer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/serialNumber"
+            android:padding="5dp"
+            android:text="Manufacturer"
+            android:background="@color/colorAccent"
+            android:textColor="@color/textColorPrimary"/>
+        <TextView
+            android:id="@+id/model"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/manufacturer"
+            android:padding="5dp"
+            android:text="Model"
+            android:background="@color/textColorPrimary"
+            android:textColor="@color/colorAccent"/>
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/model"
+            android:padding="5dp"
+            android:text="Status"
+            android:background="@color/colorAccent"
+            android:textColor="@color/textColorPrimary"/>
+        <TextView
+            android:id="@+id/powerStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/status"
+            android:padding="5dp"
+            android:text="Power Status"
+            android:background="@color/textColorPrimary"
+            android:textColor="@color/colorAccent"/>
+
+        <TextView
+            android:id="@+id/createdOn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/powerStatus"
+            android:padding="5dp"
+            android:text="Created On"
+            android:background="@color/colorAccent"
+            android:textColor="@color/textColorPrimary"/>
+        <TextView
+            android:id="@+id/createdBy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/createdOn"
+            android:padding="5dp"
+            android:text="Created By"
+            android:background="@color/textColorPrimary"
+            android:textColor="@color/colorAccent"/>
+
+        <TextView
+            android:id="@+id/updatedOn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/powerStatus"
+            android:padding="5dp"
+            android:text="Updated On"
+            android:background="@color/colorAccent"
+            android:textColor="@color/textColorPrimary"/>
+        <TextView
+            android:id="@+id/updatedBy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/createdOn"
+            android:padding="5dp"
+            android:text="Updated By"
+            android:background="@color/textColorPrimary"
+            android:textColor="@color/colorAccent"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_height="160dp">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@color/colorAccent">
+
+            <TextView
+                android:id="@+id/rfCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="RF COde"
+                android:textColor="@color/textColorPrimary"
+                android:padding="10dp"
+                android:textStyle="bold"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/rfCode"
+                android:background="@color/textColorPrimary"
+                />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/textColorPrimary"
+            />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@color/colorAccent">
+
+            <TextView
+                android:id="@+id/hardware"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Hardware"
+                android:textColor="@color/textColorPrimary"
+                android:padding="10dp"
+                android:textStyle="bold"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/hardware"
+                android:background="@color/textColorPrimary"
+                />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/textColorPrimary"
+            />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@color/colorAccent">
+
+            <TextView
+                android:id="@+id/host"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Host"
+                android:textColor="@color/textColorPrimary"
+                android:padding="10dp"
+                android:textStyle="bold"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/host"
+                android:background="@color/textColorPrimary"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

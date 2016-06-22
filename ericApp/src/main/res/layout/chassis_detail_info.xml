@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/textColorPrimary"
+    android:orientation="vertical"
+    tools:context="info.androidhive.materialdesign.activity.HomeFragment">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        >
+    <RelativeLayout
+        android:id="@+id/chassisNameLay"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="15dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chassis Name"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/textColorPrimary"
+        android:textSize="20sp"
+        />
+
+    </RelativeLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/textColorPrimary"/>
+
+    <RelativeLayout
+        android:id="@+id/HostInfoLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="15dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:textColor="@color/textColorPrimary"
+        android:text="Host Info"
+        />
+    </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

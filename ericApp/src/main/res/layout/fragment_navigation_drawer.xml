@@ -1,0 +1,361 @@
+<!--adding and matching menu items information-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/nav_header_container"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/ic_profile"
+            android:scaleType="fitCenter"
+            android:layout_centerInParent="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ChassisNameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nav_header_container"
+        android:background="@color/windowBackground">
+
+    <TextView
+        android:id="@+id/chassisNameBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chassis Detail Info"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:padding="18dp"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:textColor="@color/textColorPrimary"
+        android:background="@color/windowBackground"
+        />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_keyboard_arrow_down_white_24dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/chassisNameBtn"
+            android:layout_toEndOf="@+id/chassisNameBtn"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/chassisNameMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ChassisNameLayout"
+        android:background="@color/windowBackground"
+        android:layout_marginTop="1dp">
+
+        <TextView
+            android:id="@+id/DetailsInfoTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Details Info"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginStart="25dp"
+            android:padding="12dp"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:textColor="@color/textColorPrimary"
+            android:background="@color/windowBackground"
+            />
+
+        <View
+            android:id="@+id/DetailsInfoView"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/DetailsInfoTxt"
+            android:layout_marginLeft="35dp"
+            android:layout_marginStart="25dp"
+            android:layout_height="1dp"
+            android:background="@color/textColorPrimary"
+            />
+
+        <TextView
+            android:id="@+id/AttributesTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/DetailsInfoView"
+            android:text="Attributes"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginStart="25dp"
+            android:padding="12dp"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:textColor="@color/textColorPrimary"
+            android:background="@color/windowBackground"
+            />
+
+        <View
+            android:id="@+id/AttributeView"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/AttributesTxt"
+            android:layout_marginLeft="35dp"
+            android:layout_marginStart="25dp"
+            android:layout_height="1dp"
+            android:background="@color/textColorPrimary"
+            />
+
+        <TextView
+            android:id="@+id/LogInfoTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/AttributeView"
+            android:text="Log Info"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginStart="25dp"
+            android:padding="12dp"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:textColor="@color/textColorPrimary"
+            android:background="@color/windowBackground"
+            />
+
+        <View
+            android:id="@+id/logInfoView"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/LogInfoTxt"
+            android:layout_marginLeft="35dp"
+            android:layout_marginStart="25dp"
+            android:layout_height="1dp"
+            android:background="@color/textColorPrimary"
+            />
+
+        <TextView
+            android:id="@+id/LoginstInfoTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/logInfoView"
+            android:text="Logist Info"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginStart="25dp"
+            android:padding="12dp"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:textColor="@color/textColorPrimary"
+            android:background="@color/windowBackground"
+            />
+
+        <View
+            android:id="@+id/logistInfoView"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/LoginstInfoTxt"
+            android:layout_marginLeft="35dp"
+            android:layout_marginStart="25dp"
+            android:layout_height="1dp"
+            android:background="@color/textColorPrimary"
+            />
+
+        <TextView
+            android:id="@+id/ModelTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/logistInfoView"
+            android:text="Model/Sensor"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginStart="25dp"
+            android:padding="12dp"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:textColor="@color/textColorPrimary"
+            android:background="@color/windowBackground"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/PowerSupplyLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chassisNameMenu"
+        android:background="@color/windowBackground"
+        android:layout_marginTop="1dp">
+        <TextView
+            android:id="@+id/PowerSupplyBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Power Supply"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:padding="18dp"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:textColor="@color/textColorPrimary"
+            android:background="@color/windowBackground"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_keyboard_arrow_down_white_24dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/PowerSupplyBtn"
+            android:layout_toEndOf="@+id/PowerSupplyBtn"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/powersulppyMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/PowerSupplyLayout"
+        android:background="@color/windowBackground"
+        android:layout_marginTop="1dp">
+
+        <TextView
+            android:id="@+id/psOneTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Details Info"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginStart="25dp"
+            android:padding="12dp"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:textColor="@color/textColorPrimary"
+            android:background="@color/windowBackground"
+            />
+
+        <View
+            android:id="@+id/psOneView"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/psOneTxt"
+            android:layout_marginLeft="35dp"
+            android:layout_marginStart="25dp"
+            android:layout_height="1dp"
+            android:background="@color/textColorPrimary"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/psOneView"
+            android:text="Attributes"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginStart="25dp"
+            android:padding="12dp"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:textColor="@color/textColorPrimary"
+            android:background="@color/windowBackground"
+            />
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/PciCardLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/powersulppyMenu"
+        android:background="@color/windowBackground"
+        android:layout_marginTop="1dp">
+        <TextView
+            android:id="@+id/PciCardBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PCI Cards Info"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:padding="18dp"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:textColor="@color/textColorPrimary"
+            android:background="@color/windowBackground"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_keyboard_arrow_down_white_24dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/PciCardBtn"
+            android:layout_toEndOf="@+id/PciCardBtn"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/pciCardMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/PowerSupplyLayout"
+        android:background="@color/windowBackground"
+        android:layout_marginTop="1dp">
+
+        <TextView
+            android:id="@+id/pciCardTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Details Info"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginStart="25dp"
+            android:padding="12dp"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:textColor="@color/textColorPrimary"
+            android:background="@color/windowBackground"
+            />
+
+        <View
+            android:id="@+id/pciCardView"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/pciCardTxt"
+            android:layout_marginLeft="35dp"
+            android:layout_marginStart="25dp"
+            android:layout_height="1dp"
+            android:background="@color/textColorPrimary"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pciCardView"
+            android:text="Attributes"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginStart="25dp"
+            android:padding="12dp"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:textColor="@color/textColorPrimary"
+            android:background="@color/windowBackground"
+            />
+    </RelativeLayout>
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
